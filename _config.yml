@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Prakash Natarajan
+tagline:          'Personal website'
+description:      'CSE Graduate Student University at Buffalo, NY'
+url:              http://www.prakashn.com
+baseurl:          /
+
+author:
+  name:           'Prakash Natarajan'
+  url:            https://twitter.com/iamprakashn
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde
