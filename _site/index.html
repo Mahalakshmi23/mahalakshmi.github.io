@@ -35,7 +35,7 @@
     <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <img src="/Public/images/headerPic.jpg" alt="Prakash Natarajan">
+      <img src="/public/images/headerPic.jpg" alt="Prakash Natarajan">
       <h1>
         <a href="/">
           Prakash Natarajan
@@ -79,14 +79,6 @@
           
         
       
-        
-          
-        
-      
-        
-          
-        
-      
 
       <!-- <a class="sidebar-nav-item" href="https://github.com/poole/hyde/archive/v2.1.0.zip">Download</a> -->
       <!-- <a class="sidebar-nav-item" href="https://github.com/prakashn27">GitHub</a> -->
@@ -98,7 +90,7 @@
           <span>Resume</span>
       </a>
       <!-- <span class="sidebar-nav-item">Currently v2.1.0</span> -->
-      <span id="social-network">
+      <span id="sidebar-nav-item">
         <a href="https://www.github.com/prakashn27">
           <span class="fa-stack">
             <i class="fa fa-circle-thin fa-stack-2x fa-fw"></i>
@@ -133,7 +125,67 @@
 
     <div class="content container">
       <div class="posts">
-<h1> Things I love to do.. </h1>
+<h1> Projects and stuffs I LOVE..</h1>
+  
+  <div class="post">
+    <h2 class="post-title">
+      <a href="/2015/02/28/Stock-Market-Volatility/">
+        Stock Market Volatility with Mapreduce
+      </a>
+    </h2>
+    <span class="post-date">28 Feb 2015</span>
+    <!-- <p>Using mapreduce to compute the stock market volatility of 3000 stocks with their past three year data.
+* <a href="https://github.com/prakashn27/Volatility-Analysis">Code repo Link</a>.</p>
+
+<h2>Algorithm</h2>
+
+<p><strong>Technology</strong>  : Java<br>
+<strong>Paradigm</strong>    : MapReduce with Hadoop</p>
+
+<h3>Objective:</h3>
+
+<ul>
+<li> Find the top 10 stocks with Lowest (min) volatility.</li>
+<li> Find the top 10 stocks with the Highest (max) volatility.</li>
+</ul>
+
+<h3>Algorithm</h3>
+
+<p>I used mapreduce paradigm of Hadoop to serialise the calculation of volatility for each month and computed the top 10 and bottom values.<br>
+Number of Mapper Implementation : 3 Number of Reducer Implementation : 3        </p>
+
+<h4>Roles of each Mapper and Reducer:</h4>
+
+<p><strong>Mapper1</strong><br>
+• splits the input data and options the date and close adjacent value.
+• key - stock_name + month + year
+• value - date + adjacent close value<br>
+<strong>Reducer1</strong><br>
+• Since after the map step the values which have same key are grouped
+together and passed to the reducer as iterable, values that correspond to specific month and year of the particular stock are grouped together.
+• Beginning adjacent close value and end adjacent close value are obtained by integrating through the iterable and the value of xi for the corresponding month is computed.
+• key - Company Name
+• Value - Computed Xi.<br>
+<strong>Mapper2</strong><br>
+• Now we have to consolidate all the values obtained from the reducer with respect to company name.
+• Key - Company Name
+• Value - Xi<br>
+<strong>Reducer2</strong><br>
+• All the xi corresponding to the the respective companies are grouped
+together.
+• Volatility for the particular company is obtained from these values.
+• Key - Company Name
+• Value - Volatility<br>
+<strong>Mapper3:</strong><br>
+• All the companies are grouped together with a common key.
+• Key - Common
+• Value = Company Name + Volatility
+<strong>Reducer3:</strong><br>
+• Obtained iterable contains all the company name with values and they are
+sorted by a custom comparator.
+• top 10 and bottom 10 values are obtained from the List</p>
+ -->
+  </div>
   
   <div class="post">
     <h2 class="post-title">
@@ -179,149 +231,11 @@
  -->
   </div>
   
-  <div class="post">
-    <h2 class="post-title">
-      <a href="/2013/12/28/introducing-hyde%20copy%203/">
-        Introducing Hyde
-      </a>
-    </h2>
-    <span class="post-date">28 Dec 2013</span>
-    <!-- <p>Hyde is a brazen two-column <a href="http://jekyllrb.com">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. It&#39;s based on <a href="http://getpoole.com">Poole</a>, the Jekyll butler.</p>
-
-<h3>Built on Poole</h3>
-
-<p>Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by <a href="https://twitter.com/mdo">@mdo</a>. Poole, and every theme built on it (like Hyde here) includes the following:</p>
-
-<ul>
-<li>Complete Jekyll setup included (layouts, config, <a href="/404">404</a>, <a href="/atom.xml">RSS feed</a>, posts, and <a href="/about">example page</a>)</li>
-<li>Mobile friendly design and development</li>
-<li>Easily scalable text and component sizing with <code>rem</code> units in the CSS</li>
-<li>Support for a wide gamut of HTML elements</li>
-<li>Related posts (time-based, because Jekyll) below each post</li>
-<li>Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)</li>
-</ul>
-
-<h3>Hyde features</h3>
-
-<p>In addition to the features of Poole, Hyde adds the following:</p>
-
-<ul>
-<li>Sidebar includes support for textual modules and a dynamically generated navigation with active link support</li>
-<li>Two orientations for content and sidebar, default (left sidebar) and <a href="https://github.com/poole/lanyon#reverse-layout">reverse</a> (right sidebar), available via <code>&lt;body&gt;</code> classes</li>
-<li><a href="https://github.com/poole/hyde#themes">Eight optional color schemes</a>, available via <code>&lt;body&gt;</code> classes</li>
-</ul>
-
-<p><a href="https://github.com/poole/hyde#readme">Head to the readme</a> to learn more.</p>
-
-<h3>Browser support</h3>
-
-<p>Hyde is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.</p>
-
-<h3>Download</h3>
-
-<p>Hyde is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/hyde">GitHub repository</a> for downloads, bug reports, and features requests.</p>
-
-<p>Thanks!</p>
- -->
-  </div>
-  
-  <div class="post">
-    <h2 class="post-title">
-      <a href="/2013/12/28/introducing-hyde%20copy%202/">
-        Introducing Hyde
-      </a>
-    </h2>
-    <span class="post-date">28 Dec 2013</span>
-    <!-- <p>Hyde is a brazen two-column <a href="http://jekyllrb.com">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. It&#39;s based on <a href="http://getpoole.com">Poole</a>, the Jekyll butler.</p>
-
-<h3>Built on Poole</h3>
-
-<p>Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by <a href="https://twitter.com/mdo">@mdo</a>. Poole, and every theme built on it (like Hyde here) includes the following:</p>
-
-<ul>
-<li>Complete Jekyll setup included (layouts, config, <a href="/404">404</a>, <a href="/atom.xml">RSS feed</a>, posts, and <a href="/about">example page</a>)</li>
-<li>Mobile friendly design and development</li>
-<li>Easily scalable text and component sizing with <code>rem</code> units in the CSS</li>
-<li>Support for a wide gamut of HTML elements</li>
-<li>Related posts (time-based, because Jekyll) below each post</li>
-<li>Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)</li>
-</ul>
-
-<h3>Hyde features</h3>
-
-<p>In addition to the features of Poole, Hyde adds the following:</p>
-
-<ul>
-<li>Sidebar includes support for textual modules and a dynamically generated navigation with active link support</li>
-<li>Two orientations for content and sidebar, default (left sidebar) and <a href="https://github.com/poole/lanyon#reverse-layout">reverse</a> (right sidebar), available via <code>&lt;body&gt;</code> classes</li>
-<li><a href="https://github.com/poole/hyde#themes">Eight optional color schemes</a>, available via <code>&lt;body&gt;</code> classes</li>
-</ul>
-
-<p><a href="https://github.com/poole/hyde#readme">Head to the readme</a> to learn more.</p>
-
-<h3>Browser support</h3>
-
-<p>Hyde is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.</p>
-
-<h3>Download</h3>
-
-<p>Hyde is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/hyde">GitHub repository</a> for downloads, bug reports, and features requests.</p>
-
-<p>Thanks!</p>
- -->
-  </div>
-  
-  <div class="post">
-    <h2 class="post-title">
-      <a href="/2013/12/28/introducing-hyde%20copy/">
-        Introducing Hyde
-      </a>
-    </h2>
-    <span class="post-date">28 Dec 2013</span>
-    <!-- <p>Hyde is a brazen two-column <a href="http://jekyllrb.com">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. It&#39;s based on <a href="http://getpoole.com">Poole</a>, the Jekyll butler.</p>
-
-<h3>Built on Poole</h3>
-
-<p>Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by <a href="https://twitter.com/mdo">@mdo</a>. Poole, and every theme built on it (like Hyde here) includes the following:</p>
-
-<ul>
-<li>Complete Jekyll setup included (layouts, config, <a href="/404">404</a>, <a href="/atom.xml">RSS feed</a>, posts, and <a href="/about">example page</a>)</li>
-<li>Mobile friendly design and development</li>
-<li>Easily scalable text and component sizing with <code>rem</code> units in the CSS</li>
-<li>Support for a wide gamut of HTML elements</li>
-<li>Related posts (time-based, because Jekyll) below each post</li>
-<li>Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)</li>
-</ul>
-
-<h3>Hyde features</h3>
-
-<p>In addition to the features of Poole, Hyde adds the following:</p>
-
-<ul>
-<li>Sidebar includes support for textual modules and a dynamically generated navigation with active link support</li>
-<li>Two orientations for content and sidebar, default (left sidebar) and <a href="https://github.com/poole/lanyon#reverse-layout">reverse</a> (right sidebar), available via <code>&lt;body&gt;</code> classes</li>
-<li><a href="https://github.com/poole/hyde#themes">Eight optional color schemes</a>, available via <code>&lt;body&gt;</code> classes</li>
-</ul>
-
-<p><a href="https://github.com/poole/hyde#readme">Head to the readme</a> to learn more.</p>
-
-<h3>Browser support</h3>
-
-<p>Hyde is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.</p>
-
-<h3>Download</h3>
-
-<p>Hyde is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/hyde">GitHub repository</a> for downloads, bug reports, and features requests.</p>
-
-<p>Thanks!</p>
- -->
-  </div>
-  
 </div>
 
 <div class="pagination">
   
-    <a class="pagination-item older" href="/page2">Older</a>
+    <span class="pagination-item older">Older</span>
   
   
     <span class="pagination-item newer">Newer</span>
