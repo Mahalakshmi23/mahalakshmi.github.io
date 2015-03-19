@@ -129,6 +129,140 @@
   
   <div class="post">
     <h2 class="post-title">
+      <a href="/2015/03/19/competitive-programming-tips-from-Anudeep/">
+        Competitive programming tips from Anudeep
+      </a>
+    </h2>
+    <span class="post-date">19 Mar 2015</span>
+    <!-- <p>Below are the talk given by Anudeep - <a href="https://abhijournal.wordpress.com/2013/12/22/competitive-programming-what-was-anudeep-nekkantis-competitive-programming-strategy-to-become-35th-in-global-ranking-in-just-6-7-months/">source for reference:</a>:</p>
+
+<h3>What I did ?</h3>
+
+<p>Solved about 300 problems on SPOJ in this order – Sphere Online Judge (SPOJ)</p>
+
+<h3>Result ?</h3>
+
+<p>Became very good with C++ and STL
+Got introduced to most Competitive programming KEYWORDS (like DP, maxflow, sets, hashing, etc)
+Learned Standard Problems and Algorithms
+Intending code
+Fast typing :P</p>
+
+<h4>How ?</h4>
+
+<p>Before starting programming, I searched about how and where to start, many said “Learn an Algorithm, implement it, solve  problems related to it”. I did notdo it that way, If you know what algorithm to use you generally think in that direction and leave about correctness.  I did them problem by problem, easy to hard, I spent 1 – 4 hours on a problem.
+I get the idea, I code it, Get it Accepted. (I used to test a lot, I always wanted to get AC on first go)</p>
+
+<p>I do not get the idea, I save that problem and try it after a month again. If I still do not get them, then search for hints. If it clearly needed some algorithm which I never used then I first smile (? I could not only because I did not knew the algorithm :P ) and then start reading about that algorithm. TopCoder had tutorials of almost all common algorithms. This is where I did a BIG MISTAKE. I never cared about correctness or run-time analysis proof, I always learned how to solve the problem using that algorithm, I hardly learned about how the algorithm works. I feel bad about it now, but that is how I solved those problems then. I solved max-flow, convex hull, etc., problems using described algorithms but I did not UNDERSTAND those algorithms then.</p>
+
+<p><strong>Mistake:</strong> Once I started taking part in contests, I completely stopped practice.</p>
+
+<p>35th in Global Ranking</p>
+
+<p>CodeChef long contests are comparatively easy ( Which is good, You can learn a lot), you get a lot of time to think about a problem, search for resources. You only need KEYWORDS to search for similar problems.
+I gave a lot of time for each contest. I used to solve 4 easy problems in 2-3 days, then take 5-6 days for other 3 problems.
+CodeChef rating system is not good. It is highly Volatile.
+If I am to start programming now, I would do it this way</p>
+
+<p>Solve 200 most solved problems on SPOJ, Problem by problem. In 2 months.
+(This will teach all standard problems, algorithms and implementation skills)
+Solve problems from CodeChef and CodeForces for 2 months.
+(This will teach variations, we can read others solutions and learn better ways. Skip easy problems)
+Solve problems from TopCoder for 2 months.
+(This will teach  Dynamic Programming. Div 1 500p)
+Check past ACM ICPC Regional’s Problems
+(Great quality problems)
+If I am to learn a new Algorithm now, I would do it this way</p>
+
+<p>Read it from at least 3-4 different sources.
+Understand correctness proof and run-time analysis.
+(This is very very important, you will know it only when you  deal with non standard  and hard problems)
+Question yourself on every step for correctness. Try to tweak the implementation.
+Check other implementations.
+Final Note
+Thought I became good in solving problems and had good rank. I later(Feb 13) realized that I learned it the wrong way. I then started learning again. I learned all the algorithms again this time gave importance to the algorithm itself, correctness proof and mathematical analysis. It is worth the time.</p>
+
+<p>Lucy and the Flowers – Problem from December long contest, Try to solve it with suffix arrays. You can only if you understand suffix arrays and LCP completely.</p>
+
+<p>I was able to solve a not-so-obvious medium level Max-Flow problem at ACM KGP Onsite only because I completely understood how the algorithm works. It was at 4 hour 25 minutes I got 5th problem accepted, then I read this problem and got it accepted 4 minutes before end. Learning the algorithm helped.</p>
+ -->
+  </div>
+  
+  <div class="post">
+    <h2 class="post-title">
+      <a href="/2015/03/19/Algorithm-to%20return-beginning-of-loop/">
+        Algorithm to return to the Beginning of Loop in (corrupt)LinkedList
+      </a>
+    </h2>
+    <span class="post-date">19 Mar 2015</span>
+    <!-- <h4>QUESTION:</h4>
+
+<p>Given a circular linked list, implement an algorithm which returns node at the beginning of the loop.</p>
+
+<p><strong>DEFINITION</strong>
+    Circular linked list: A (corrupt) linked list in which a node’s next pointer points to an earlier node, so as to make a loop in the linked list.         </p>
+
+<p><strong>EXAMPLE</strong><br>
+input: A -&gt; B -&gt; C -&gt; D -&gt; E -&gt; C [the same C as earlier]<br>
+output: C</p>
+
+<p>CODE from <a href="https://github.com/gaylemcd/ctci/blob/master/java/Chapter%202/Question2_6/Question.java">ctci</a>  </p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="n">LinkedListNode</span> <span class="nf">FindBeginning</span><span class="o">(</span><span class="n">LinkedListNode</span> <span class="n">head</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">LinkedListNode</span> <span class="n">slow</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span>
+        <span class="n">LinkedListNode</span> <span class="n">fast</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span> 
+        
+        <span class="c1">// Find meeting point</span>
+        <span class="k">while</span> <span class="o">(</span><span class="n">fast</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">fast</span><span class="o">.</span><span class="na">next</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span> 
+            <span class="n">slow</span> <span class="o">=</span> <span class="n">slow</span><span class="o">.</span><span class="na">next</span><span class="o">;</span> 
+            <span class="n">fast</span> <span class="o">=</span> <span class="n">fast</span><span class="o">.</span><span class="na">next</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">slow</span> <span class="o">==</span> <span class="n">fast</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+
+        <span class="c1">// Error check - there is no meeting point, and therefore no loop</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">fast</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span class="n">fast</span><span class="o">.</span><span class="na">next</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="cm">/* Move slow to Head. Keep fast at Meeting Point. Each are k steps</span>
+<span class="cm">       /* from the Loop Start. If they move at the same pace, they must</span>
+<span class="cm">        * meet at Loop Start. */</span>
+        <span class="n">slow</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span> 
+        <span class="k">while</span> <span class="o">(</span><span class="n">slow</span> <span class="o">!=</span> <span class="n">fast</span><span class="o">)</span> <span class="o">{</span> 
+            <span class="n">slow</span> <span class="o">=</span> <span class="n">slow</span><span class="o">.</span><span class="na">next</span><span class="o">;</span> 
+            <span class="n">fast</span> <span class="o">=</span> <span class="n">fast</span><span class="o">.</span><span class="na">next</span><span class="o">;</span> 
+        <span class="o">}</span>
+        
+        <span class="c1">// Both now point to the start of the loop.</span>
+        <span class="k">return</span> <span class="n">fast</span><span class="o">;</span>
+    <span class="o">}</span></code></pre></div>
+
+<h4>ANALYSIS:</h4>
+
+<p><strong>Why is this working??</strong>
+let k be the num of steps from head to loopBeginNode.<br>
+let s be the num of steps from loopBeginNode to Meeting node<br>
+<em>slow</em> has previously travelled k + s nodes<br>
+<em>fast</em> been circulating the n circles in the ring (1 &lt;= n).<br>
+let r be the loop length<br>
+then fast has travelled s + nr to meet the slow.<br>
+Hence meeting point = <strong>(s + nr) = s</strong> { due to the loop }<br>
+The total movement of fast from head is <strong>k + s + nr</strong>.<br>
+so from meeting node fast needs to move k times to reach loopBeginNode.<br>
+from head, k steps is needed to reach the loopBeginNode.          </p>
+
+<p>Hope you enjoyed it. </p>
+
+<p>Happy Coding . :)</p>
+
+<p>Credits: To my geeky friend <a href="http://www.santhosh.info/">Santhosh</a></p>
+ -->
+  </div>
+  
+  <div class="post">
+    <h2 class="post-title">
       <a href="/2015/02/28/Stock-Market-Volatility/">
         Stock Market Volatility with Mapreduce
       </a>
@@ -189,45 +323,21 @@ sorted by a custom comparator.
   
   <div class="post">
     <h2 class="post-title">
-      <a href="/2014/09/06/my-tweaks-of-an-OS/">
-        My tweaks of PintOS Operating System!
+      <a href="/2014/12/27/fun-with-swift-and-iOS/">
+        Fun with SWIFT and iOS
       </a>
     </h2>
-    <span class="post-date">06 Sep 2014</span>
-    <!-- <p><a href="http://web.stanford.edu/class/cs140/projects/pintos/pintos.html#SEC_Contents">Pintos</a> is a simple operating system framework for the 80x86 architecture. It does not support priority scheduling. Our task is to implement priority scheduler and multilevel feed back priority scheduler.<br>
-* <a href="https://github.com/prakashn27/Pintos-Project1">Code repo Link</a>.</p>
+    <span class="post-date">27 Dec 2014</span>
+    <!-- <p>Contributed to <a href="%22https://github.com/prakashn27/ctci%22">open source repository</a> using swift programming language. I was also working some <a href="%22https://github.com/prakashn27/my-Swift_Projects%22">pet projects</a> to try out swift and ios. My pet iOS projects developed in swift. </p>
 
-<h2>Algorithm</h2>
+<h4>Projects List:</h4>
 
-<h3>Priority Scheduler</h3>
-
-<ul>
-<li>For priority scheduler, Changed the scheduler linked list into priority queue, so that everytime next Highest prioirty thread is scheduled.</li>
-</ul>
-
-<p><strong>Pros:</strong> 
-1. Guarantees early completion of high priority jobs</p>
-
-<p><strong>Cons:</strong><br>
-- Can cause starvation of low priority jobs 
-- How to decide/assign priority numbers?</p>
-
-<h3>Multi level feedback priority queue scheduler</h3>
-
-<ul>
-<li>For Multilevel feedback queue scheduler, I maintained seperate queue (8ms round robin queue, 16ms round robin queue and FIFO). All the process first goes into the first queue, if it is not completed then it is scheduled to next queue and even if 24ms (8 + 16) is not enough for the process to finish it is appended in the tail of the FIFO. </li>
-</ul>
-
-<p><strong>Pros:</strong><br>
-1. Great for timesharing – no starvation
-2. Does not require prior knowledge of CPU burst times
-3. Generally reduces average response time</p>
-
-<p><strong>Cons:</strong><br>
-1. What if all jobs are almost time same length? Increases the turnaround time.<br>
-2. How to set the “best” time quantum?
-        * if small, then context switch often, incurring high overhead<br>
-        * if large, then response time degrades             </p>
+<ol>
+<li><a href="https://github.com/prakashn27/my-Swift_Projects/tree/master/CatYears">Cat years</a></li>
+<li><a href="https://github.com/prakashn27/my-Swift_Projects/tree/master/HowManyFingers">How many fingers</a></li>
+<li><a href="https://github.com/prakashn27/my-Swift_Projects/tree/master/Is%20It%20Prime">Is it a prime</a></li>
+<li><a href="https://github.com/prakashn27/my-Swift_Projects/tree/master/Stopwatch">Stop watch</a></li>
+</ol>
  -->
   </div>
   

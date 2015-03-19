@@ -4,13 +4,143 @@
  <title>Prakash Natarajan</title>
  <link href="http://www.prakashn.com/atom.xml" rel="self"/>
  <link href="http://www.prakashn.com/"/>
- <updated>2015-03-13T18:56:04-04:00</updated>
+ <updated>2015-03-19T11:17:04-04:00</updated>
  <id>http://www.prakashn.com</id>
  <author>
    <name>Prakash Natarajan</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Competitive programming tips from Anudeep</title>
+   <link href="http://www.prakashn.com/2015/03/19/competitive-programming-tips-from-Anudeep/"/>
+   <updated>2015-03-19T00:00:00-04:00</updated>
+   <id>http://www.prakashn.com/2015/03/19/competitive-programming-tips-from-Anudeep</id>
+   <content type="html">&lt;p&gt;Below are the talk given by Anudeep - &lt;a href=&quot;https://abhijournal.wordpress.com/2013/12/22/competitive-programming-what-was-anudeep-nekkantis-competitive-programming-strategy-to-become-35th-in-global-ranking-in-just-6-7-months/&quot;&gt;source for reference:&lt;/a&gt;:&lt;/p&gt;
+
+&lt;h3&gt;What I did ?&lt;/h3&gt;
+
+&lt;p&gt;Solved about 300 problems on SPOJ in this order – Sphere Online Judge (SPOJ)&lt;/p&gt;
+
+&lt;h3&gt;Result ?&lt;/h3&gt;
+
+&lt;p&gt;Became very good with C++ and STL
+Got introduced to most Competitive programming KEYWORDS (like DP, maxflow, sets, hashing, etc)
+Learned Standard Problems and Algorithms
+Intending code
+Fast typing :P&lt;/p&gt;
+
+&lt;h4&gt;How ?&lt;/h4&gt;
+
+&lt;p&gt;Before starting programming, I searched about how and where to start, many said “Learn an Algorithm, implement it, solve  problems related to it”. I did notdo it that way, If you know what algorithm to use you generally think in that direction and leave about correctness.  I did them problem by problem, easy to hard, I spent 1 – 4 hours on a problem.
+I get the idea, I code it, Get it Accepted. (I used to test a lot, I always wanted to get AC on first go)&lt;/p&gt;
+
+&lt;p&gt;I do not get the idea, I save that problem and try it after a month again. If I still do not get them, then search for hints. If it clearly needed some algorithm which I never used then I first smile (? I could not only because I did not knew the algorithm :P ) and then start reading about that algorithm. TopCoder had tutorials of almost all common algorithms. This is where I did a BIG MISTAKE. I never cared about correctness or run-time analysis proof, I always learned how to solve the problem using that algorithm, I hardly learned about how the algorithm works. I feel bad about it now, but that is how I solved those problems then. I solved max-flow, convex hull, etc., problems using described algorithms but I did not UNDERSTAND those algorithms then.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mistake:&lt;/strong&gt; Once I started taking part in contests, I completely stopped practice.&lt;/p&gt;
+
+&lt;p&gt;35th in Global Ranking&lt;/p&gt;
+
+&lt;p&gt;CodeChef long contests are comparatively easy ( Which is good, You can learn a lot), you get a lot of time to think about a problem, search for resources. You only need KEYWORDS to search for similar problems.
+I gave a lot of time for each contest. I used to solve 4 easy problems in 2-3 days, then take 5-6 days for other 3 problems.
+CodeChef rating system is not good. It is highly Volatile.
+If I am to start programming now, I would do it this way&lt;/p&gt;
+
+&lt;p&gt;Solve 200 most solved problems on SPOJ, Problem by problem. In 2 months.
+(This will teach all standard problems, algorithms and implementation skills)
+Solve problems from CodeChef and CodeForces for 2 months.
+(This will teach variations, we can read others solutions and learn better ways. Skip easy problems)
+Solve problems from TopCoder for 2 months.
+(This will teach  Dynamic Programming. Div 1 500p)
+Check past ACM ICPC Regional’s Problems
+(Great quality problems)
+If I am to learn a new Algorithm now, I would do it this way&lt;/p&gt;
+
+&lt;p&gt;Read it from at least 3-4 different sources.
+Understand correctness proof and run-time analysis.
+(This is very very important, you will know it only when you  deal with non standard  and hard problems)
+Question yourself on every step for correctness. Try to tweak the implementation.
+Check other implementations.
+Final Note
+Thought I became good in solving problems and had good rank. I later(Feb 13) realized that I learned it the wrong way. I then started learning again. I learned all the algorithms again this time gave importance to the algorithm itself, correctness proof and mathematical analysis. It is worth the time.&lt;/p&gt;
+
+&lt;p&gt;Lucy and the Flowers – Problem from December long contest, Try to solve it with suffix arrays. You can only if you understand suffix arrays and LCP completely.&lt;/p&gt;
+
+&lt;p&gt;I was able to solve a not-so-obvious medium level Max-Flow problem at ACM KGP Onsite only because I completely understood how the algorithm works. It was at 4 hour 25 minutes I got 5th problem accepted, then I read this problem and got it accepted 4 minutes before end. Learning the algorithm helped.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Algorithm to return to the Beginning of Loop in (corrupt)LinkedList</title>
+   <link href="http://www.prakashn.com/2015/03/19/Algorithm-to%20return-beginning-of-loop/"/>
+   <updated>2015-03-19T00:00:00-04:00</updated>
+   <id>http://www.prakashn.com/2015/03/19/Algorithm-to return-beginning-of-loop</id>
+   <content type="html">&lt;h4&gt;QUESTION:&lt;/h4&gt;
+
+&lt;p&gt;Given a circular linked list, implement an algorithm which returns node at the beginning of the loop.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DEFINITION&lt;/strong&gt;
+    Circular linked list: A (corrupt) linked list in which a node’s next pointer points to an earlier node, so as to make a loop in the linked list.         &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EXAMPLE&lt;/strong&gt;&lt;br&gt;
+input: A -&amp;gt; B -&amp;gt; C -&amp;gt; D -&amp;gt; E -&amp;gt; C [the same C as earlier]&lt;br&gt;
+output: C&lt;/p&gt;
+
+&lt;p&gt;CODE from &lt;a href=&quot;https://github.com/gaylemcd/ctci/blob/master/java/Chapter%202/Question2_6/Question.java&quot;&gt;ctci&lt;/a&gt;  &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LinkedListNode&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;FindBeginning&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LinkedListNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;LinkedListNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;LinkedListNode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fast&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+        
+        &lt;span class=&quot;c1&quot;&gt;// Find meeting point&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fast&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+            &lt;span class=&quot;n&quot;&gt;slow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+            &lt;span class=&quot;n&quot;&gt;fast&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;slow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Error check - there is no meeting point, and therefore no loop&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fast&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;cm&quot;&gt;/* Move slow to Head. Keep fast at Meeting Point. Each are k steps&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;       /* from the Loop Start. If they move at the same pace, they must&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;        * meet at Loop Start. */&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;slow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+        &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;slow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+            &lt;span class=&quot;n&quot;&gt;slow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+            &lt;span class=&quot;n&quot;&gt;fast&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        
+        &lt;span class=&quot;c1&quot;&gt;// Both now point to the start of the loop.&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;ANALYSIS:&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Why is this working??&lt;/strong&gt;
+let k be the num of steps from head to loopBeginNode.&lt;br&gt;
+let s be the num of steps from loopBeginNode to Meeting node&lt;br&gt;
+&lt;em&gt;slow&lt;/em&gt; has previously travelled k + s nodes&lt;br&gt;
+&lt;em&gt;fast&lt;/em&gt; been circulating the n circles in the ring (1 &amp;lt;= n).&lt;br&gt;
+let r be the loop length&lt;br&gt;
+then fast has travelled s + nr to meet the slow.&lt;br&gt;
+Hence meeting point = &lt;strong&gt;(s + nr) = s&lt;/strong&gt; { due to the loop }&lt;br&gt;
+The total movement of fast from head is &lt;strong&gt;k + s + nr&lt;/strong&gt;.&lt;br&gt;
+so from meeting node fast needs to move k times to reach loopBeginNode.&lt;br&gt;
+from head, k steps is needed to reach the loopBeginNode.          &lt;/p&gt;
+
+&lt;p&gt;Hope you enjoyed it. &lt;/p&gt;
+
+&lt;p&gt;Happy Coding . :)&lt;/p&gt;
+
+&lt;p&gt;Credits: To my geeky friend &lt;a href=&quot;http://www.santhosh.info/&quot;&gt;Santhosh&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Stock Market Volatility with Mapreduce</title>
@@ -67,6 +197,24 @@ together.
 • Obtained iterable contains all the company name with values and they are
 sorted by a custom comparator.
 • top 10 and bottom 10 values are obtained from the List&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Fun with SWIFT and iOS</title>
+   <link href="http://www.prakashn.com/2014/12/27/fun-with-swift-and-iOS/"/>
+   <updated>2014-12-27T00:00:00-05:00</updated>
+   <id>http://www.prakashn.com/2014/12/27/fun-with-swift-and-iOS</id>
+   <content type="html">&lt;p&gt;Contributed to &lt;a href=&quot;%22https://github.com/prakashn27/ctci%22&quot;&gt;open source repository&lt;/a&gt; using swift programming language. I was also working some &lt;a href=&quot;%22https://github.com/prakashn27/my-Swift_Projects%22&quot;&gt;pet projects&lt;/a&gt; to try out swift and ios. My pet iOS projects developed in swift. &lt;/p&gt;
+
+&lt;h4&gt;Projects List:&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/prakashn27/my-Swift_Projects/tree/master/CatYears&quot;&gt;Cat years&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/prakashn27/my-Swift_Projects/tree/master/HowManyFingers&quot;&gt;How many fingers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/prakashn27/my-Swift_Projects/tree/master/Is%20It%20Prime&quot;&gt;Is it a prime&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/prakashn27/my-Swift_Projects/tree/master/Stopwatch&quot;&gt;Stop watch&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </content>
  </entry>
  
