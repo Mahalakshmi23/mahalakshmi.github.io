@@ -125,15 +125,88 @@
 
     <div class="content container">
       <div class="posts">
-<h1> Projects and Stuffs I LOVE to do..</h1>
+<h2> </h2>
   
   <div class="post">
     <h2 class="post-title">
-      <a href="/2015/03/19/competitive-programming-tips-from-Anudeep/">
-        Competitive programming tips from Anudeep
+      <a href="/2015/03/19/Algorithm-to%20return-beginning-of-loop/">
+        Algorithm to return to the Beginning of Loop in (corrupt) LinkedList
       </a>
     </h2>
     <span class="post-date">19 Mar 2015</span>
+    <!-- <h4>QUESTION:</h4>
+
+<p>Given a circular linked list, implement an algorithm which returns node at the beginning of the loop.</p>
+
+<p><strong>DEFINITION</strong>
+    Circular linked list: A (corrupt) linked list in which a node’s next pointer points to an earlier node, so as to make a loop in the linked list.         </p>
+
+<p><strong>EXAMPLE</strong><br>
+input: A -&gt; B -&gt; C -&gt; D -&gt; E -&gt; C [the same C as earlier]<br>
+output: C</p>
+
+<p><strong>CODE</strong> from <a href="https://github.com/gaylemcd/ctci/blob/master/java/Chapter%202/Question2_6/Question.java">ctci</a>  </p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="n">LinkedListNode</span> <span class="nf">FindBeginning</span><span class="o">(</span><span class="n">LinkedListNode</span> <span class="n">head</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">LinkedListNode</span> <span class="n">slow</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span>
+        <span class="n">LinkedListNode</span> <span class="n">fast</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span> 
+        
+        <span class="c1">// Find meeting point</span>
+        <span class="k">while</span> <span class="o">(</span><span class="n">fast</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">fast</span><span class="o">.</span><span class="na">next</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span> 
+            <span class="n">slow</span> <span class="o">=</span> <span class="n">slow</span><span class="o">.</span><span class="na">next</span><span class="o">;</span> 
+            <span class="n">fast</span> <span class="o">=</span> <span class="n">fast</span><span class="o">.</span><span class="na">next</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">slow</span> <span class="o">==</span> <span class="n">fast</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+
+        <span class="c1">// Error check - there is no meeting point, and therefore no loop</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">fast</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span class="n">fast</span><span class="o">.</span><span class="na">next</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="cm">/* Move slow to Head. Keep fast at Meeting Point. Each are k steps</span>
+<span class="cm">       /* from the Loop Start. If they move at the same pace, they must</span>
+<span class="cm">        * meet at Loop Start. */</span>
+        <span class="n">slow</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span> 
+        <span class="k">while</span> <span class="o">(</span><span class="n">slow</span> <span class="o">!=</span> <span class="n">fast</span><span class="o">)</span> <span class="o">{</span> 
+            <span class="n">slow</span> <span class="o">=</span> <span class="n">slow</span><span class="o">.</span><span class="na">next</span><span class="o">;</span> 
+            <span class="n">fast</span> <span class="o">=</span> <span class="n">fast</span><span class="o">.</span><span class="na">next</span><span class="o">;</span> 
+        <span class="o">}</span>
+        
+        <span class="c1">// Both now point to the start of the loop.</span>
+        <span class="k">return</span> <span class="n">fast</span><span class="o">;</span>
+    <span class="o">}</span></code></pre></div>
+
+<h4>ANALYSIS:</h4>
+
+<p><strong>Why is this working??</strong>
+let k be the num of steps from head to loopBeginNode.<br>
+let s be the num of steps from loopBeginNode to Meeting node<br>
+<em>slow</em> has previously travelled k + s nodes<br>
+<em>fast</em> been circulating the n circles in the ring (1 &lt;= n).<br>
+let r be the loop length<br>
+then fast has travelled s + nr to meet the slow.<br>
+Hence meeting point = <strong>(s + nr) = s</strong> { due to the loop }<br>
+The total movement of fast from head is <strong>k + s + nr</strong>.<br>
+so from meeting node fast needs to move k times to reach loopBeginNode.<br>
+from head, k steps is needed to reach the loopBeginNode.          </p>
+
+<p>Hope you enjoyed it. </p>
+
+<p>Happy Coding . :)</p>
+
+<p><strong>Credits</strong>: To my geeky friend <a href="http://www.santhosh.info/">Santhosh</a></p>
+ -->
+  </div>
+  
+  <div class="post">
+    <h2 class="post-title">
+      <a href="/2015/03/12/competitive-programming-tips-from-Anudeep/">
+        Competitive programming tips from Anudeep
+      </a>
+    </h2>
+    <span class="post-date">12 Mar 2015</span>
     <!-- <p>Below are the talk given by Anudeep - <a href="https://abhijournal.wordpress.com/2013/12/22/competitive-programming-what-was-anudeep-nekkantis-competitive-programming-strategy-to-become-35th-in-global-ranking-in-just-6-7-months/">source for reference:</a>:</p>
 
 <h3>What I did ?</h3>
@@ -185,79 +258,6 @@ Thought I became good in solving problems and had good rank. I later(Feb 13) rea
 <p>Lucy and the Flowers – Problem from December long contest, Try to solve it with suffix arrays. You can only if you understand suffix arrays and LCP completely.</p>
 
 <p>I was able to solve a not-so-obvious medium level Max-Flow problem at ACM KGP Onsite only because I completely understood how the algorithm works. It was at 4 hour 25 minutes I got 5th problem accepted, then I read this problem and got it accepted 4 minutes before end. Learning the algorithm helped.</p>
- -->
-  </div>
-  
-  <div class="post">
-    <h2 class="post-title">
-      <a href="/2015/03/19/Algorithm-to%20return-beginning-of-loop/">
-        Algorithm to return to the Beginning of Loop in (corrupt)LinkedList
-      </a>
-    </h2>
-    <span class="post-date">19 Mar 2015</span>
-    <!-- <h4>QUESTION:</h4>
-
-<p>Given a circular linked list, implement an algorithm which returns node at the beginning of the loop.</p>
-
-<p><strong>DEFINITION</strong>
-    Circular linked list: A (corrupt) linked list in which a node’s next pointer points to an earlier node, so as to make a loop in the linked list.         </p>
-
-<p><strong>EXAMPLE</strong><br>
-input: A -&gt; B -&gt; C -&gt; D -&gt; E -&gt; C [the same C as earlier]<br>
-output: C</p>
-
-<p>CODE from <a href="https://github.com/gaylemcd/ctci/blob/master/java/Chapter%202/Question2_6/Question.java">ctci</a>  </p>
-
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="n">LinkedListNode</span> <span class="nf">FindBeginning</span><span class="o">(</span><span class="n">LinkedListNode</span> <span class="n">head</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">LinkedListNode</span> <span class="n">slow</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span>
-        <span class="n">LinkedListNode</span> <span class="n">fast</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span> 
-        
-        <span class="c1">// Find meeting point</span>
-        <span class="k">while</span> <span class="o">(</span><span class="n">fast</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">fast</span><span class="o">.</span><span class="na">next</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span> 
-            <span class="n">slow</span> <span class="o">=</span> <span class="n">slow</span><span class="o">.</span><span class="na">next</span><span class="o">;</span> 
-            <span class="n">fast</span> <span class="o">=</span> <span class="n">fast</span><span class="o">.</span><span class="na">next</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
-            <span class="k">if</span> <span class="o">(</span><span class="n">slow</span> <span class="o">==</span> <span class="n">fast</span><span class="o">)</span> <span class="o">{</span>
-                <span class="k">break</span><span class="o">;</span>
-            <span class="o">}</span>
-        <span class="o">}</span>
-
-        <span class="c1">// Error check - there is no meeting point, and therefore no loop</span>
-        <span class="k">if</span> <span class="o">(</span><span class="n">fast</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span class="n">fast</span><span class="o">.</span><span class="na">next</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
-            <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
-        <span class="o">}</span>
-
-        <span class="cm">/* Move slow to Head. Keep fast at Meeting Point. Each are k steps</span>
-<span class="cm">       /* from the Loop Start. If they move at the same pace, they must</span>
-<span class="cm">        * meet at Loop Start. */</span>
-        <span class="n">slow</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span> 
-        <span class="k">while</span> <span class="o">(</span><span class="n">slow</span> <span class="o">!=</span> <span class="n">fast</span><span class="o">)</span> <span class="o">{</span> 
-            <span class="n">slow</span> <span class="o">=</span> <span class="n">slow</span><span class="o">.</span><span class="na">next</span><span class="o">;</span> 
-            <span class="n">fast</span> <span class="o">=</span> <span class="n">fast</span><span class="o">.</span><span class="na">next</span><span class="o">;</span> 
-        <span class="o">}</span>
-        
-        <span class="c1">// Both now point to the start of the loop.</span>
-        <span class="k">return</span> <span class="n">fast</span><span class="o">;</span>
-    <span class="o">}</span></code></pre></div>
-
-<h4>ANALYSIS:</h4>
-
-<p><strong>Why is this working??</strong>
-let k be the num of steps from head to loopBeginNode.<br>
-let s be the num of steps from loopBeginNode to Meeting node<br>
-<em>slow</em> has previously travelled k + s nodes<br>
-<em>fast</em> been circulating the n circles in the ring (1 &lt;= n).<br>
-let r be the loop length<br>
-then fast has travelled s + nr to meet the slow.<br>
-Hence meeting point = <strong>(s + nr) = s</strong> { due to the loop }<br>
-The total movement of fast from head is <strong>k + s + nr</strong>.<br>
-so from meeting node fast needs to move k times to reach loopBeginNode.<br>
-from head, k steps is needed to reach the loopBeginNode.          </p>
-
-<p>Hope you enjoyed it. </p>
-
-<p>Happy Coding . :)</p>
-
-<p>Credits: To my geeky friend <a href="http://www.santhosh.info/">Santhosh</a></p>
  -->
   </div>
   

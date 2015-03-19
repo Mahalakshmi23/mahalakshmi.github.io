@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Algorithm to return to the Beginning of Loop in (corrupt)LinkedList
+title: Algorithm to return to the Beginning of Loop in (corrupt) LinkedList
 ---
 
 ####QUESTION:
@@ -13,7 +13,7 @@ title: Algorithm to return to the Beginning of Loop in (corrupt)LinkedList
 input: A -> B -> C -> D -> E -> C [the same C as earlier]      
 output: C
 
-CODE from [ctci](https://github.com/gaylemcd/ctci/blob/master/java/Chapter%202/Question2_6/Question.java)  
+**CODE** from [ctci](https://github.com/gaylemcd/ctci/blob/master/java/Chapter%202/Question2_6/Question.java)  
 {% highlight java %}
 public static LinkedListNode FindBeginning(LinkedListNode head) {
 		LinkedListNode slow = head;
@@ -66,4 +66,4 @@ Hope you enjoyed it.
 
 Happy Coding . :)
 
-Credits: To my geeky friend [Santhosh](http://www.santhosh.info/)
+**Credits**: To my geeky friend [Santhosh](http://www.santhosh.info/)
