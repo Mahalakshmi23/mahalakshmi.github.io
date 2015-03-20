@@ -340,7 +340,7 @@ tbody tr:nth-child(odd) th {
   color: #303030;
 }
 .post-title a:hover {
-  color: #9ACD32;
+  color: #DC143C;
 }
 .page-title,
 .post-title {
@@ -373,7 +373,7 @@ tbody tr:nth-child(odd) th {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #268bd2;
+  color: #DC143C;
   text-decoration: none;
 }
 .related-posts li a:hover small {
