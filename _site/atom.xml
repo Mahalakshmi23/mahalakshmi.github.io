@@ -4,13 +4,89 @@
  <title>Prakash Natarajan</title>
  <link href="http://www.prakashn.com/atom.xml" rel="self"/>
  <link href="http://www.prakashn.com/"/>
- <updated>2015-03-19T11:36:14-04:00</updated>
+ <updated>2015-03-19T23:01:41-04:00</updated>
  <id>http://www.prakashn.com</id>
  <author>
    <name>Prakash Natarajan</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Programming - A Dump Child Approach</title>
+   <link href="http://www.prakashn.com/2015/03/20/what-is-programming/"/>
+   <updated>2015-03-20T00:00:00-04:00</updated>
+   <id>http://www.prakashn.com/2015/03/20/what-is-programming</id>
+   <content type="html">&lt;p&gt;&lt;strong&gt;Credits:&lt;/strong&gt; &lt;a href=&quot;http://www.quora.com/How-can-programmers-conceive-and-write-abstract-things-like-computer-programs-and-codes&quot;&gt;Quora&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Programming&lt;/strong&gt; is the art of instructing a really-really-really dumb kid. You have to be specific. You have to be detailed. Most of all, you need to be concise.&lt;/p&gt;
+
+&lt;p&gt;Take &amp;quot;do the laundry&amp;quot; for instance. This is probably quite intuitive for most people. The instruction for a smart kid might be:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bring your clothes to the washer and do your laundry.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a really dumb kid (computer), you need to be much more specific and make sure you cover all your bases.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt; Go to your room.&lt;/li&gt;
+&lt;li&gt; Obtain a basket.&lt;/li&gt;
+&lt;li&gt; For all dirty clothes, place in basket.&lt;/li&gt;
+&lt;li&gt; Pick up the basket.&lt;/li&gt;
+&lt;li&gt; Go to the laundry room.&lt;/li&gt;
+&lt;li&gt; Place dirty clothes in washer.&lt;/li&gt;
+&lt;li&gt; Add detergent.&lt;/li&gt;
+&lt;li&gt; Set washer to 45mins, warm.&lt;/li&gt;
+&lt;li&gt; Push the start button.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This is actually still quite high-level (not detailed enough). You need to include checks in the middle.&lt;/p&gt;
+
+&lt;p&gt;During each step, check:&lt;br&gt;
+* is the house on fire?&lt;br&gt;
+* is your name being called?&lt;br&gt;
+* is there a poisonous spider?     &lt;/p&gt;
+
+&lt;p&gt;Each one of these need further instructions!!!&lt;/p&gt;
+
+&lt;p&gt;That&amp;#39;s basically what programming is, a set of very very detailed instructions pieced together in an over all set of instructions we call software.&lt;/p&gt;
+
+&lt;p&gt;In this context, it&amp;#39;s actually much more amazing what we can do as humans!&lt;/p&gt;
+
+&lt;p&gt;Take the first instruction for example:&lt;/p&gt;
+
+&lt;p&gt;Go to your room.&lt;/p&gt;
+
+&lt;p&gt;This is actually a collection of many subroutines that are built into our brains.&lt;/p&gt;
+
+&lt;p&gt;We must have previously learned:&lt;/p&gt;
+
+&lt;p&gt;How to move foot muscles
+How to move leg muscles
+How to detect a difference in center of gravity
+How to coordinate a walking sequence between multiple muscle systems, when to pull / relax, and at what timing...
+How to re-adjust your balance
+How to identify objects in your way.
+How to walk around objects
+How to identify your room
+How to identify a basket
+How to identify a spider!!
+And so on, and so forth.&lt;/p&gt;
+
+&lt;p&gt;Programming is like this. Except we have many programmers from around the world building many-many subroutines.&lt;/p&gt;
+
+&lt;p&gt;We share these subroutines so that we can load them into our dumb-dumb children (computers) and make them smart.&lt;/p&gt;
+
+&lt;p&gt;In a sense, we can pick what type of pre-trained child we want. A starting foundation that we can build on.&lt;/p&gt;
+
+&lt;p&gt;Some prefer raw clay, some prefer a strong foundation.&lt;/p&gt;
+
+&lt;p&gt;Culturally, many programming parents love open source projects. There&amp;#39;s a feeling of unity and sharing. They are contributing to a global effort in raising the average intelligence of software everywhere.&lt;/p&gt;
+
+&lt;p&gt;Happy Programming. &amp;lt;3&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Algorithm to return to the Beginning of Loop in (corrupt) LinkedList</title>
