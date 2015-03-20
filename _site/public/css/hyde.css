@@ -74,6 +74,9 @@ html {
 .sidebar a {
   color: #fff;
 }
+.sidebar h1 a:hover {
+  color:  #1E90FF;
+}
 
 /* About section */
 .sidebar-about h1 {
@@ -81,7 +84,9 @@ html {
   margin-top: 0;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 1.50rem;
-
+}
+.sidebar-about h1:hover {
+  color:  #DC143C;
 }
 
 .sidebar-about img {
@@ -107,6 +112,10 @@ a.sidebar-nav-item:focus {
 }
 .sidebar-nav-item.active {
   font-weight: bold;
+}
+a.sidebar-nav-social:hover {
+  text-decoration: underline;
+  color: #B22222;
 }
 
 /* Sticky sidebar
@@ -260,9 +269,9 @@ a.sidebar-nav-item:focus {
 }
 
 /*Hover*/
-a:hover {
+/*a:hover {
     color: orange;
-}
+}*/
 
 /* social buttons css */
 div.social-buttons {
