@@ -9,7 +9,7 @@ relative_permalinks: true
 # Setup
 title:            Prakash Natarajan
 tagline:          'Personal website'
-description:      'AWS Mobile Intern Graduate Student University at Buffalo, NY'
+description:      'CS Graduate Student University at Buffalo'
 url:              http://www.prakashn.com
 baseurl:          /
 
