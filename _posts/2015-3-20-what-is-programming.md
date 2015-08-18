@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Programming - A Dump Child Approach
+title: Programming - A Dumb Child Approach
 ---
 
 **Credits:** [Quora](http://www.quora.com/How-can-programmers-conceive-and-write-abstract-things-like-computer-programs-and-codes)

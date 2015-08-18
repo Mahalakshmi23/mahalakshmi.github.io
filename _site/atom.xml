@@ -4,7 +4,7 @@
  <title>Prakash Natarajan</title>
  <link href="http://www.prakashn.com/atom.xml" rel="self"/>
  <link href="http://www.prakashn.com/"/>
- <updated>2015-08-10T10:10:42-07:00</updated>
+ <updated>2015-08-18T03:45:55-04:00</updated>
  <id>http://www.prakashn.com</id>
  <author>
    <name>Prakash Natarajan</name>
@@ -13,9 +13,9 @@
 
  
  <entry>
-   <title>Programming - A Dump Child Approach</title>
+   <title>Programming - A Dumb Child Approach</title>
    <link href="http://www.prakashn.com/2015/03/20/what-is-programming/"/>
-   <updated>2015-03-20T00:00:00-07:00</updated>
+   <updated>2015-03-20T00:00:00-04:00</updated>
    <id>http://www.prakashn.com/2015/03/20/what-is-programming</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;Credits:&lt;/strong&gt; &lt;a href=&quot;http://www.quora.com/How-can-programmers-conceive-and-write-abstract-things-like-computer-programs-and-codes&quot;&gt;Quora&lt;/a&gt;&lt;/p&gt;
 
@@ -91,7 +91,7 @@ And so on, and so forth.&lt;/p&gt;
  <entry>
    <title>Algorithm to return to the Beginning of Loop in (corrupt) LinkedList</title>
    <link href="http://www.prakashn.com/2015/03/19/Algorithm-to%20return-beginning-of-loop/"/>
-   <updated>2015-03-19T00:00:00-07:00</updated>
+   <updated>2015-03-19T00:00:00-04:00</updated>
    <id>http://www.prakashn.com/2015/03/19/Algorithm-to return-beginning-of-loop</id>
    <content type="html">&lt;h4&gt;QUESTION:&lt;/h4&gt;
 
@@ -164,7 +164,7 @@ from head, k steps is needed to reach the loopBeginNode.          &lt;/p&gt;
  <entry>
    <title>Competitive programming tips from Anudeep</title>
    <link href="http://www.prakashn.com/2015/03/12/competitive-programming-tips-from-Anudeep/"/>
-   <updated>2015-03-12T00:00:00-07:00</updated>
+   <updated>2015-03-12T00:00:00-04:00</updated>
    <id>http://www.prakashn.com/2015/03/12/competitive-programming-tips-from-Anudeep</id>
    <content type="html">&lt;p&gt;Below are the talk given by Anudeep - &lt;a href=&quot;https://abhijournal.wordpress.com/2013/12/22/competitive-programming-what-was-anudeep-nekkantis-competitive-programming-strategy-to-become-35th-in-global-ranking-in-just-6-7-months/&quot;&gt;source for reference:&lt;/a&gt;:&lt;/p&gt;
 
@@ -223,7 +223,7 @@ Thought I became good in solving problems and had good rank. I later(Feb 13) rea
  <entry>
    <title>Stock Market Volatility with Mapreduce</title>
    <link href="http://www.prakashn.com/2015/02/28/Stock-Market-Volatility/"/>
-   <updated>2015-02-28T00:00:00-08:00</updated>
+   <updated>2015-02-28T00:00:00-05:00</updated>
    <id>http://www.prakashn.com/2015/02/28/Stock-Market-Volatility</id>
    <content type="html">&lt;p&gt;Using mapreduce to compute the stock market volatility of 3000 stocks with their past three year data.
 * &lt;a href=&quot;https://github.com/prakashn27/Volatility-Analysis&quot;&gt;Code repo Link&lt;/a&gt;.&lt;/p&gt;
@@ -281,7 +281,7 @@ sorted by a custom comparator.
  <entry>
    <title>Fun with SWIFT and iOS</title>
    <link href="http://www.prakashn.com/2014/12/27/fun-with-swift-and-iOS/"/>
-   <updated>2014-12-27T00:00:00-08:00</updated>
+   <updated>2014-12-27T00:00:00-05:00</updated>
    <id>http://www.prakashn.com/2014/12/27/fun-with-swift-and-iOS</id>
    <content type="html">&lt;p&gt;Contributed to &lt;a href=&quot;%22https://github.com/prakashn27/ctci%22&quot;&gt;open source repository&lt;/a&gt; using swift programming language. I was also working some &lt;a href=&quot;%22https://github.com/prakashn27/my-Swift_Projects%22&quot;&gt;pet projects&lt;/a&gt; to try out swift and ios. My pet iOS projects developed in swift. &lt;/p&gt;
 
@@ -299,7 +299,7 @@ sorted by a custom comparator.
  <entry>
    <title>My tweaks of PintOS Operating System!</title>
    <link href="http://www.prakashn.com/2014/09/06/my-tweaks-of-an-OS/"/>
-   <updated>2014-09-06T00:00:00-07:00</updated>
+   <updated>2014-09-06T00:00:00-04:00</updated>
    <id>http://www.prakashn.com/2014/09/06/my-tweaks-of-an-OS</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://web.stanford.edu/class/cs140/projects/pintos/pintos.html#SEC_Contents&quot;&gt;Pintos&lt;/a&gt; is a simple operating system framework for the 80x86 architecture. It does not support priority scheduling. Our task is to implement priority scheduler and multilevel feed back priority scheduler.&lt;br&gt;
 * &lt;a href=&quot;https://github.com/prakashn27/Pintos-Project1&quot;&gt;Code repo Link&lt;/a&gt;.&lt;/p&gt;
