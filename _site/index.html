@@ -134,6 +134,16 @@
   
   <div class="post">
     <h2 class="post-title">
+      <a href="/2015/08/20/async-fetching-of-scripts-in-html/">
+        Async fetching of script in HTML5
+      </a>
+    </h2>
+    <span class="post-date">20 Aug 2015</span>
+    <!--  -->
+  </div>
+  
+  <div class="post">
+    <h2 class="post-title">
       <a href="/2015/03/20/what-is-programming/">
         Programming - A Dumb Child Approach
       </a>
@@ -343,66 +353,6 @@ Thought I became good in solving problems and had good rank. I later(Feb 13) rea
 <p>Lucy and the Flowers – Problem from December long contest, Try to solve it with suffix arrays. You can only if you understand suffix arrays and LCP completely.</p>
 
 <p>I was able to solve a not-so-obvious medium level Max-Flow problem at ACM KGP Onsite only because I completely understood how the algorithm works. It was at 4 hour 25 minutes I got 5th problem accepted, then I read this problem and got it accepted 4 minutes before end. Learning the algorithm helped.</p>
- -->
-  </div>
-  
-  <div class="post">
-    <h2 class="post-title">
-      <a href="/2015/02/28/Stock-Market-Volatility/">
-        Stock Market Volatility with Mapreduce
-      </a>
-    </h2>
-    <span class="post-date">28 Feb 2015</span>
-    <!-- <p>Using mapreduce to compute the stock market volatility of 3000 stocks with their past three year data.
-* <a href="https://github.com/prakashn27/Volatility-Analysis">Code repo Link</a>.</p>
-
-<h2>Algorithm</h2>
-
-<p><strong>Technology</strong>  : Java<br>
-<strong>Paradigm</strong>    : MapReduce with Hadoop</p>
-
-<h3>Objective:</h3>
-
-<ul>
-<li> Find the top 10 stocks with Lowest (min) volatility.</li>
-<li> Find the top 10 stocks with the Highest (max) volatility.</li>
-</ul>
-
-<h3>Algorithm</h3>
-
-<p>I used mapreduce paradigm of Hadoop to serialise the calculation of volatility for each month and computed the top 10 and bottom values.<br>
-Number of Mapper Implementation : 3 Number of Reducer Implementation : 3        </p>
-
-<h4>Roles of each Mapper and Reducer:</h4>
-
-<p><strong>Mapper1</strong><br>
-• splits the input data and options the date and close adjacent value.
-• key - stock_name + month + year
-• value - date + adjacent close value<br>
-<strong>Reducer1</strong><br>
-• Since after the map step the values which have same key are grouped
-together and passed to the reducer as iterable, values that correspond to specific month and year of the particular stock are grouped together.
-• Beginning adjacent close value and end adjacent close value are obtained by integrating through the iterable and the value of xi for the corresponding month is computed.
-• key - Company Name
-• Value - Computed Xi.<br>
-<strong>Mapper2</strong><br>
-• Now we have to consolidate all the values obtained from the reducer with respect to company name.
-• Key - Company Name
-• Value - Xi<br>
-<strong>Reducer2</strong><br>
-• All the xi corresponding to the the respective companies are grouped
-together.
-• Volatility for the particular company is obtained from these values.
-• Key - Company Name
-• Value - Volatility<br>
-<strong>Mapper3:</strong><br>
-• All the companies are grouped together with a common key.
-• Key - Common
-• Value = Company Name + Volatility
-<strong>Reducer3:</strong><br>
-• Obtained iterable contains all the company name with values and they are
-sorted by a custom comparator.
-• top 10 and bottom 10 values are obtained from the List</p>
  -->
   </div>
   

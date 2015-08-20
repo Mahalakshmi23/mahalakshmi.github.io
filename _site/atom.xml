@@ -4,13 +4,21 @@
  <title>Prakash Natarajan</title>
  <link href="http://www.prakashn.com/atom.xml" rel="self"/>
  <link href="http://www.prakashn.com/"/>
- <updated>2015-08-18T03:45:55-04:00</updated>
+ <updated>2015-08-20T03:18:44-04:00</updated>
  <id>http://www.prakashn.com</id>
  <author>
    <name>Prakash Natarajan</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Async fetching of script in HTML5</title>
+   <link href="http://www.prakashn.com/2015/08/20/async-fetching-of-scripts-in-html/"/>
+   <updated>2015-08-20T00:00:00-04:00</updated>
+   <id>http://www.prakashn.com/2015/08/20/async-fetching-of-scripts-in-html</id>
+   <content type="html"></content>
+ </entry>
  
  <entry>
    <title>Programming - A Dumb Child Approach</title>
