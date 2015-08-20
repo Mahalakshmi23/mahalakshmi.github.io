@@ -4,7 +4,7 @@
  <title>Prakash Natarajan</title>
  <link href="http://www.prakashn.com/atom.xml" rel="self"/>
  <link href="http://www.prakashn.com/"/>
- <updated>2015-08-20T03:18:44-04:00</updated>
+ <updated>2015-08-20T04:08:21-04:00</updated>
  <id>http://www.prakashn.com</id>
  <author>
    <name>Prakash Natarajan</name>
@@ -17,7 +17,50 @@
    <link href="http://www.prakashn.com/2015/08/20/async-fetching-of-scripts-in-html/"/>
    <updated>2015-08-20T00:00:00-04:00</updated>
    <id>http://www.prakashn.com/2015/08/20/async-fetching-of-scripts-in-html</id>
-   <content type="html"></content>
+   <content type="html">&lt;p&gt;&lt;strong&gt;Who wants a slow page loading? NO - ONE&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;p&gt;But my external are scripts are so big and it does not depend of the parsing of the page elements, then why should we load the script at the same time as html.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Prereq&lt;/em&gt; : &lt;a href=&quot;http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/#HTML_Parser&quot;&gt;click this link to get more insights abouts the how html is loaded into the page &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;One hack to overcome this page load time is to load the scripts in the seperate thread. This can be acheived by using &lt;strong&gt;async&lt;/strong&gt; keyword in the script tag. &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;main.js&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;async&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This async key word in the script tag creates a seperate thread from rendering engine and loads the script asynchronously.&lt;/p&gt;
+
+&lt;p&gt;Another hack to load the scriopt after the page is loaded (that is after all  the elements are parsed) is to use the &lt;strong&gt;defer&lt;/strong&gt; attribute. &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;main.js&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;defer&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The following tables describes the action for async and defer.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Source:&lt;/em&gt; &lt;a href=&quot;http://www.w3schools.com/tags/att_script_defer.asp&quot;&gt;w3schools.com&lt;/a&gt; &lt;/p&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align: left&quot;&gt;async&lt;/th&gt;
+&lt;th style=&quot;text-align: center&quot;&gt;defer&lt;/th&gt;
+&lt;th style=&quot;text-align: center&quot;&gt;Action&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align: left&quot;&gt;Yes&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;No&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;The script is executed asynchronously with the rest of the page (the script will be executed while the page continues the parsing)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align: left&quot;&gt;No&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;Yes&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;The script is executed when the page has finished parsing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align: left&quot;&gt;No&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;No&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;The script is fetched and executed immediately, before the browser continues parsing the page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;Thanks for reading. Now it is time to load faster.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -101,7 +144,7 @@ And so on, and so forth.&lt;/p&gt;
    <link href="http://www.prakashn.com/2015/03/19/Algorithm-to%20return-beginning-of-loop/"/>
    <updated>2015-03-19T00:00:00-04:00</updated>
    <id>http://www.prakashn.com/2015/03/19/Algorithm-to return-beginning-of-loop</id>
-   <content type="html">&lt;h4&gt;QUESTION:&lt;/h4&gt;
+   <content type="html">&lt;h4 id=&quot;question:&quot;&gt;QUESTION:&lt;/h4&gt;
 
 &lt;p&gt;Given a circular linked list, implement an algorithm which returns node at the beginning of the loop.&lt;/p&gt;
 
@@ -147,7 +190,7 @@ output: C&lt;/p&gt;
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h4&gt;ANALYSIS:&lt;/h4&gt;
+&lt;h4 id=&quot;analysis:&quot;&gt;ANALYSIS:&lt;/h4&gt;
 
 &lt;p&gt;&lt;strong&gt;Why is this working??&lt;/strong&gt;
 let k be the num of steps from head to loopBeginNode.&lt;br&gt;
@@ -176,11 +219,11 @@ from head, k steps is needed to reach the loopBeginNode.          &lt;/p&gt;
    <id>http://www.prakashn.com/2015/03/12/competitive-programming-tips-from-Anudeep</id>
    <content type="html">&lt;p&gt;Below are the talk given by Anudeep - &lt;a href=&quot;https://abhijournal.wordpress.com/2013/12/22/competitive-programming-what-was-anudeep-nekkantis-competitive-programming-strategy-to-become-35th-in-global-ranking-in-just-6-7-months/&quot;&gt;source for reference:&lt;/a&gt;:&lt;/p&gt;
 
-&lt;h3&gt;What I did ?&lt;/h3&gt;
+&lt;h3 id=&quot;what-i-did-?&quot;&gt;What I did ?&lt;/h3&gt;
 
 &lt;p&gt;Solved about 300 problems on SPOJ in this order – Sphere Online Judge (SPOJ)&lt;/p&gt;
 
-&lt;h3&gt;Result ?&lt;/h3&gt;
+&lt;h3 id=&quot;result-?&quot;&gt;Result ?&lt;/h3&gt;
 
 &lt;p&gt;Became very good with C++ and STL
 Got introduced to most Competitive programming KEYWORDS (like DP, maxflow, sets, hashing, etc)
@@ -188,7 +231,7 @@ Learned Standard Problems and Algorithms
 Intending code
 Fast typing :P&lt;/p&gt;
 
-&lt;h4&gt;How ?&lt;/h4&gt;
+&lt;h4 id=&quot;how-?&quot;&gt;How ?&lt;/h4&gt;
 
 &lt;p&gt;Before starting programming, I searched about how and where to start, many said “Learn an Algorithm, implement it, solve  problems related to it”. I did notdo it that way, If you know what algorithm to use you generally think in that direction and leave about correctness.  I did them problem by problem, easy to hard, I spent 1 – 4 hours on a problem.
 I get the idea, I code it, Get it Accepted. (I used to test a lot, I always wanted to get AC on first go)&lt;/p&gt;
@@ -236,24 +279,24 @@ Thought I became good in solving problems and had good rank. I later(Feb 13) rea
    <content type="html">&lt;p&gt;Using mapreduce to compute the stock market volatility of 3000 stocks with their past three year data.
 * &lt;a href=&quot;https://github.com/prakashn27/Volatility-Analysis&quot;&gt;Code repo Link&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2&gt;Algorithm&lt;/h2&gt;
+&lt;h2 id=&quot;algorithm&quot;&gt;Algorithm&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Technology&lt;/strong&gt;  : Java&lt;br&gt;
 &lt;strong&gt;Paradigm&lt;/strong&gt;    : MapReduce with Hadoop&lt;/p&gt;
 
-&lt;h3&gt;Objective:&lt;/h3&gt;
+&lt;h3 id=&quot;objective:&quot;&gt;Objective:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt; Find the top 10 stocks with Lowest (min) volatility.&lt;/li&gt;
 &lt;li&gt; Find the top 10 stocks with the Highest (max) volatility.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3&gt;Algorithm&lt;/h3&gt;
+&lt;h3 id=&quot;algorithm&quot;&gt;Algorithm&lt;/h3&gt;
 
 &lt;p&gt;I used mapreduce paradigm of Hadoop to serialise the calculation of volatility for each month and computed the top 10 and bottom values.&lt;br&gt;
 Number of Mapper Implementation : 3 Number of Reducer Implementation : 3        &lt;/p&gt;
 
-&lt;h4&gt;Roles of each Mapper and Reducer:&lt;/h4&gt;
+&lt;h4 id=&quot;roles-of-each-mapper-and-reducer:&quot;&gt;Roles of each Mapper and Reducer:&lt;/h4&gt;
 
 &lt;p&gt;&lt;strong&gt;Mapper1&lt;/strong&gt;&lt;br&gt;
 • splits the input data and options the date and close adjacent value.
@@ -293,7 +336,7 @@ sorted by a custom comparator.
    <id>http://www.prakashn.com/2014/12/27/fun-with-swift-and-iOS</id>
    <content type="html">&lt;p&gt;Contributed to &lt;a href=&quot;%22https://github.com/prakashn27/ctci%22&quot;&gt;open source repository&lt;/a&gt; using swift programming language. I was also working some &lt;a href=&quot;%22https://github.com/prakashn27/my-Swift_Projects%22&quot;&gt;pet projects&lt;/a&gt; to try out swift and ios. My pet iOS projects developed in swift. &lt;/p&gt;
 
-&lt;h4&gt;Projects List:&lt;/h4&gt;
+&lt;h4 id=&quot;projects-list:&quot;&gt;Projects List:&lt;/h4&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/prakashn27/my-Swift_Projects/tree/master/CatYears&quot;&gt;Cat years&lt;/a&gt;&lt;/li&gt;
@@ -312,9 +355,9 @@ sorted by a custom comparator.
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://web.stanford.edu/class/cs140/projects/pintos/pintos.html#SEC_Contents&quot;&gt;Pintos&lt;/a&gt; is a simple operating system framework for the 80x86 architecture. It does not support priority scheduling. Our task is to implement priority scheduler and multilevel feed back priority scheduler.&lt;br&gt;
 * &lt;a href=&quot;https://github.com/prakashn27/Pintos-Project1&quot;&gt;Code repo Link&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2&gt;Algorithm&lt;/h2&gt;
+&lt;h2 id=&quot;algorithm&quot;&gt;Algorithm&lt;/h2&gt;
 
-&lt;h3&gt;Priority Scheduler&lt;/h3&gt;
+&lt;h3 id=&quot;priority-scheduler&quot;&gt;Priority Scheduler&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;For priority scheduler, Changed the scheduler linked list into priority queue, so that everytime next Highest prioirty thread is scheduled.&lt;/li&gt;
@@ -327,7 +370,7 @@ sorted by a custom comparator.
 - Can cause starvation of low priority jobs 
 - How to decide/assign priority numbers?&lt;/p&gt;
 
-&lt;h3&gt;Multi level feedback priority queue scheduler&lt;/h3&gt;
+&lt;h3 id=&quot;multi-level-feedback-priority-queue-scheduler&quot;&gt;Multi level feedback priority queue scheduler&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;For Multilevel feedback queue scheduler, I maintained seperate queue (8ms round robin queue, 16ms round robin queue and FIFO). All the process first goes into the first queue, if it is not completed then it is scheduled to next queue and even if 24ms (8 + 16) is not enough for the process to finish it is appended in the tail of the FIFO. &lt;/li&gt;

@@ -139,7 +139,50 @@
       </a>
     </h2>
     <span class="post-date">20 Aug 2015</span>
-    <!--  -->
+    <!-- <p><strong>Who wants a slow page loading? NO - ONE</strong>  </p>
+
+<p>But my external are scripts are so big and it does not depend of the parsing of the page elements, then why should we load the script at the same time as html.</p>
+
+<p><em>Prereq</em> : <a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/#HTML_Parser">click this link to get more insights abouts the how html is loaded into the page </a></p>
+
+<p>One hack to overcome this page load time is to load the scripts in the seperate thread. This can be acheived by using <strong>async</strong> keyword in the script tag. </p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;main.js&quot;</span> <span class="na">async</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div>
+<p>This async key word in the script tag creates a seperate thread from rendering engine and loads the script asynchronously.</p>
+
+<p>Another hack to load the scriopt after the page is loaded (that is after all  the elements are parsed) is to use the <strong>defer</strong> attribute. </p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;main.js&quot;</span> <span class="na">defer</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div>
+<p>The following tables describes the action for async and defer.</p>
+
+<p><em>Source:</em> <a href="http://www.w3schools.com/tags/att_script_defer.asp">w3schools.com</a> </p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">async</th>
+<th style="text-align: center">defer</th>
+<th style="text-align: center">Action</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">Yes</td>
+<td style="text-align: center">No</td>
+<td style="text-align: center">The script is executed asynchronously with the rest of the page (the script will be executed while the page continues the parsing)</td>
+</tr>
+<tr>
+<td style="text-align: left">No</td>
+<td style="text-align: center">Yes</td>
+<td style="text-align: center">The script is executed when the page has finished parsing</td>
+</tr>
+<tr>
+<td style="text-align: left">No</td>
+<td style="text-align: center">No</td>
+<td style="text-align: center">The script is fetched and executed immediately, before the browser continues parsing the page</td>
+</tr>
+</tbody></table>
+
+<p>Thanks for reading. Now it is time to load faster.</p>
+ -->
   </div>
   
   <div class="post">
@@ -227,7 +270,7 @@ And so on, and so forth.</p>
       </a>
     </h2>
     <span class="post-date">19 Mar 2015</span>
-    <!-- <h4>QUESTION:</h4>
+    <!-- <h4 id="question:">QUESTION:</h4>
 
 <p>Given a circular linked list, implement an algorithm which returns node at the beginning of the loop.</p>
 
@@ -273,7 +316,7 @@ output: C</p>
         <span class="k">return</span> <span class="n">fast</span><span class="o">;</span>
     <span class="o">}</span></code></pre></div>
 
-<h4>ANALYSIS:</h4>
+<h4 id="analysis:">ANALYSIS:</h4>
 
 <p><strong>Why is this working??</strong>
 let k be the num of steps from head to loopBeginNode.<br>
@@ -304,11 +347,11 @@ from head, k steps is needed to reach the loopBeginNode.          </p>
     <span class="post-date">12 Mar 2015</span>
     <!-- <p>Below are the talk given by Anudeep - <a href="https://abhijournal.wordpress.com/2013/12/22/competitive-programming-what-was-anudeep-nekkantis-competitive-programming-strategy-to-become-35th-in-global-ranking-in-just-6-7-months/">source for reference:</a>:</p>
 
-<h3>What I did ?</h3>
+<h3 id="what-i-did-?">What I did ?</h3>
 
 <p>Solved about 300 problems on SPOJ in this order – Sphere Online Judge (SPOJ)</p>
 
-<h3>Result ?</h3>
+<h3 id="result-?">Result ?</h3>
 
 <p>Became very good with C++ and STL
 Got introduced to most Competitive programming KEYWORDS (like DP, maxflow, sets, hashing, etc)
@@ -316,7 +359,7 @@ Learned Standard Problems and Algorithms
 Intending code
 Fast typing :P</p>
 
-<h4>How ?</h4>
+<h4 id="how-?">How ?</h4>
 
 <p>Before starting programming, I searched about how and where to start, many said “Learn an Algorithm, implement it, solve  problems related to it”. I did notdo it that way, If you know what algorithm to use you generally think in that direction and leave about correctness.  I did them problem by problem, easy to hard, I spent 1 – 4 hours on a problem.
 I get the idea, I code it, Get it Accepted. (I used to test a lot, I always wanted to get AC on first go)</p>

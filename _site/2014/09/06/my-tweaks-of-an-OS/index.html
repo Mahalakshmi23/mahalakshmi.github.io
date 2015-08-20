@@ -135,9 +135,9 @@
   <p><a href="http://web.stanford.edu/class/cs140/projects/pintos/pintos.html#SEC_Contents">Pintos</a> is a simple operating system framework for the 80x86 architecture. It does not support priority scheduling. Our task is to implement priority scheduler and multilevel feed back priority scheduler.<br>
 * <a href="https://github.com/prakashn27/Pintos-Project1">Code repo Link</a>.</p>
 
-<h2>Algorithm</h2>
+<h2 id="algorithm">Algorithm</h2>
 
-<h3>Priority Scheduler</h3>
+<h3 id="priority-scheduler">Priority Scheduler</h3>
 
 <ul>
 <li>For priority scheduler, Changed the scheduler linked list into priority queue, so that everytime next Highest prioirty thread is scheduled.</li>
@@ -150,7 +150,7 @@
 - Can cause starvation of low priority jobs 
 - How to decide/assign priority numbers?</p>
 
-<h3>Multi level feedback priority queue scheduler</h3>
+<h3 id="multi-level-feedback-priority-queue-scheduler">Multi level feedback priority queue scheduler</h3>
 
 <ul>
 <li>For Multilevel feedback queue scheduler, I maintained seperate queue (8ms round robin queue, 16ms round robin queue and FIFO). All the process first goes into the first queue, if it is not completed then it is scheduled to next queue and even if 24ms (8 + 16) is not enough for the process to finish it is appended in the tail of the FIFO. </li>
@@ -187,7 +187,7 @@
 <!-- end disqus content -->
 
 <div class="related">
-  <h2>Related Posts</h2>
+  <h2> You may like this too.. </h2>
   <ul class="related-posts">
     
       <li>
