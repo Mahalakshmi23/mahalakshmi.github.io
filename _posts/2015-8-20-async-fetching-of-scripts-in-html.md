@@ -5,7 +5,9 @@ title: Async fetching of script in HTML5
 
 **Who wants a slow page loading? NO - ONE**  
 
-But my external are scripts are so big and it does not depend of the parsing of the page elements, then why should we load the script at the same time as html.
+If big external javascript file makes the loading of page slow, **what** can we do??
+
+If my external scripts does not depend of the parsing of the page elements, then **why** should we load the script at the same time as html.
 
 *Prereq* : [click this link to get more insights abouts the how html is loaded into the page ](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/#HTML_Parser)
 
@@ -33,6 +35,6 @@ The following tables describes the action for async and defer.
 | No | No      | The script is fetched and executed immediately, before the browser continues parsing the page |
 
 
-Thanks for reading. Now it is time to load faster.
+Thanks for reading. Now it is time to load faster. (personally i do use aync keyword for this site)
 
 
