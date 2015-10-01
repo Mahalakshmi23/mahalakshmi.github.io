@@ -18,7 +18,7 @@ One hack to overcome this page load time is to load the scripts in the seperate 
 ```
 This async key word in the script tag creates a seperate thread from rendering engine and loads the script asynchronously.
 
-Another hack to load the scriopt after the page is loaded (that is after all  the elements are parsed) is to use the **defer** attribute. 
+Another hack to load the script after the page is loaded (that is after all  the elements are parsed) is to use the **defer** attribute. 
 
 ``` html 
 <script src="main.js" defer></script>

@@ -4,7 +4,7 @@
  <title>Prakash Natarajan</title>
  <link href="http://www.prakashn.com/atom.xml" rel="self"/>
  <link href="http://www.prakashn.com/"/>
- <updated>2015-09-24T17:53:42-04:00</updated>
+ <updated>2015-10-01T15:10:20-04:00</updated>
  <id>http://www.prakashn.com</id>
  <author>
    <name>Prakash Natarajan</name>
@@ -30,7 +30,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This async key word in the script tag creates a seperate thread from rendering engine and loads the script asynchronously.&lt;/p&gt;
 
-&lt;p&gt;Another hack to load the scriopt after the page is loaded (that is after all  the elements are parsed) is to use the &lt;strong&gt;defer&lt;/strong&gt; attribute. &lt;/p&gt;
+&lt;p&gt;Another hack to load the script after the page is loaded (that is after all  the elements are parsed) is to use the &lt;strong&gt;defer&lt;/strong&gt; attribute. &lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;main.js&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;defer&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The following tables describes the action for async and defer.&lt;/p&gt;
